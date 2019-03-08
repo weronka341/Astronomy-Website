@@ -1,0 +1,348 @@
+.planets-headers {
+
+  width: 30%;
+  margin-left: 7%;
+  margin-top: 6%;
+  padding-right: 0px;
+  float: right;
+  text-align: center;
+}
+
+.planets-headers a {
+
+  text-decoration: none;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 4vh;
+  display: inline-block;
+}
+
+.planets-headers h1 {
+
+  color: #c0c0c0;
+  padding-bottom: 3vh;
+  text-shadow: 0 0 10px  #0eabc5, 0 0 25px  #0eabc5, 0 0 70px #0eabc5;
+}
+
+#sun-header{
+
+  padding: 1vh;
+  color: #ffe900;
+  text-shadow: 0 0 10px  #ffa100, 0 0 25px  #ffa100, 0 0 70px #ffa100;
+}
+
+#mercury-header{
+
+  padding: 1vh;
+  color: #694a26;
+  text-shadow: 0 0 10px  #5a3b22, 0 0 25px  #5a3b22, 0 0 70px #5a3b22;
+}
+
+#venus-header{
+
+  padding: 1vh;
+  color: #ffa100;
+  text-shadow: 0 0 10px  #cc5500, 0 0 25px  #cc5500, 0 0 70px #cc5500;
+}
+
+#earth-header{
+
+  padding: 1vh;
+  color: #078e00;
+  text-shadow: 0 0 10px  #086003, 0 0 25px  #086003, 0 0 70px #086003;
+}
+
+#mars-header{
+
+  padding: 1vh;
+  color: #be6348;
+  text-shadow: 0 0 10px #894531, 0 0 25px #894531, 0 0 70px#894531;
+}
+
+#jupiter-header{
+
+  padding: 1vh;
+  color: #968875;
+  text-shadow: 0 0 10px  #7b6e5d, 0 0 25px  #7b6e5d, 0 0 70px #7b6e5d;
+}
+
+#saturn-header{
+
+  padding: 1vh;
+  color: #62575b;
+  text-shadow: 0 0 10px #5f6156, 0 0 25px #5f6156, 0 0 70px #5f6156;
+}
+
+#uranus-header{
+
+  padding: 1vh;
+  color: #63b3bb;
+  text-shadow: 0 0 10px  #408a92, 0 0 25px  #408a92, 0 0 70px #408a92;
+}
+
+#neptune-header{
+
+  padding: 1vh;
+  color: #5747e8;
+  text-shadow: 0 0 10px  #342b81, 0 0 25px  #342b81, 0 0 70px #342b81;
+}
+
+#solar-system-content {
+
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  position: relative;
+  display: flex;
+}
+
+#solar-system-content:after {
+
+  content: "";
+  background-image: url(https://www.solarsystemscope.com/images/background_stars_grid.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.solar-model {
+
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.solar-model div {
+
+  border-radius: 1000px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.solar-model div:not(.sun) {
+
+  border: 2px solid rgba(102, 166, 229, 0.3);
+}
+
+.solar-model div:not(.sun):before {
+  left: 50%;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+}
+
+#sun {
+
+  background-image: radial-gradient(circle, #ff0000, #ff3e00, #ff5a00, #ff7000, #ff8300, #ff9300, #ffa200, #ffb100, #ffc100, #ffd200, #ffe300, #fff400);  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  background-clip: padding-box;
+  border: 0;
+  background-position: -28px -103px;
+  background-size: 175%;
+
+}
+
+#mercury {
+
+  height: 70px;
+  width: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  animation: orb 7s linear infinite;
+}
+
+#mercury:before {
+  height: 6px;
+  width: 6px;
+  background-image: linear-gradient(to right, #5e5c5a, #655547, #6c4c37, #734229, #7a361e);
+  margin-top: -3px;
+  margin-left: -3px;
+
+
+}
+
+#venus {
+
+  height: 100px;
+  width: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: orb 18s linear infinite;
+}
+
+#venus:before {
+
+  height: 12px;
+  width: 12px;
+  background-image: radial-gradient(circle, #ff8500, #ff7700, #ff6800, #ff5600, #ff4200);
+  margin-top: -6px;
+  margin-left: -6px;
+}
+
+#earth {
+
+  height: 145px;
+  width: 145px;
+  margin-top: -72.5px;
+  margin-left: -72.5px;
+  animation: orb 30s linear infinite;
+}
+#earth:before {
+
+  height: 9px;
+  width: 9px;
+  background-image: linear-gradient(to left, #013789, #004687, #004e7a, #005469, #005759, #005b54, #005e4c, #0e6142, #186743, #226e43, #2c7443, #367a42);
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+#earth:after {
+
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 50%;
+  top: 0px;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 100px;
+  box-shadow: 0 -10px 0 -8px white;
+  animation: orb 2s linear infinite;
+}
+
+#mars {
+
+  height: 190px;
+  width: 190px;
+  margin-top: -95px;
+  margin-left: -95px;
+  animation: orb 56s linear infinite;
+}
+
+#mars:before {
+
+  height: 9px;
+  width: 9px;
+   background-image: linear-gradient(to left top, #815717, #9c6316, #ba6d17, #da771b, #fb8022);
+  margin-top: -4px;
+  margin-left: -4px;
+}
+
+#jupiter {
+
+  height: 340px;
+  width: 340px;
+  margin-top: -170px;
+  margin-left: -170px;
+  animation: orb 356s linear infinite;
+}
+
+#jupiter:before {
+
+  height: 27px;
+  width: 27px;
+  background-image: linear-gradient(to bottom, #7d8b89, #CFE0EA, #b1977a);
+  margin-top: -13px;
+  margin-left: -13px;
+}
+
+#saturn {
+
+  height: 440px;
+  width: 440px;
+  margin-top: -220px;
+  margin-left: -220px;
+  animation: orb 883s linear infinite;
+}
+
+#saturn:before {
+
+  height: 18px;
+  width: 18px;
+  background-image: linear-gradient(to left, #81776d, #8a8477, #929283, #98a191, #9eafa1);
+  margin-top: -9px;
+  margin-left: -9px;
+}
+
+#saturn:after {
+
+  position: absolute;
+  content: "";
+  height: 3%;
+  width: 6%;
+  left: 50%;
+  top: 0px;
+  transform: rotateZ(-52deg);
+  margin-left: -2.8%;
+  margin-top: -1.8%;
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 0 1px 0 1px #987641, 3px 1px 0 #987641, -3px 1px 0 #987641;
+  animation: orb 800s linear infinite;
+  animation-direction: reverse;
+/*  transform-origin: 52% 60%;*/
+}
+
+#uranus {
+
+  height: 520px;
+  width: 520px;
+  margin-top: -260px;
+  margin-left: -260px;
+  animation: orb 2512s linear infinite;
+}
+
+#uranus:before {
+
+  height: 15px;
+  width: 15px;
+  background-image: linear-gradient(to left, #3a43ff, #0073ff, #0096ff, #2db3fd, #89cbee);
+  margin-top: -7px;
+  margin-left: -7px;
+}
+
+#neptune {
+
+  height: 630px;
+  width: 630px;
+  margin-top: -315px;
+  margin-left: -315px;
+  animation: orb 4912s linear infinite;
+}
+
+#neptune:before {
+
+  height: 15px;
+  width: 15px;
+  background-image: linear-gradient(to left, #8949cf, #7a3cd3, #662fd7, #4c22dc, #1515e1);
+  margin-top: -7px;
+  margin-left: -7px;
+
+}
+
+*, *:before, *:after {
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes orb {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,112 @@
+html, body {
+
+  height: 100%;
+  width: 100%;
+
+}
+
+header, footer {
+
+	background-color: #000d1f;
+	box-shadow: 0px 0px 28px 5px rgba(24, 208, 238, 0.8);
+	font-family: 'Chakra Petch', sans-serif;
+	color: white;
+}
+
+header {
+
+	display: flex;
+	border-style: solid;
+	border-color: #18d0ee;
+	border-width: 0px 0px 1px 0px;	
+}
+
+footer {
+
+	height: 8vh;
+	line-height: 8vh;
+	justify-content: center;
+	text-align: center;
+	border-style: solid;
+	border-color: #18d0ee;
+	border-width: 1px 0px 0px 0px;
+}
+
+header h1 {
+
+	color: white;	
+	padding: 2vh;
+	padding-left: 6vh;
+	width: 50%;
+	font-size: 5vh;
+}
+
+h1 {
+
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 4vh;
+	display: inline-block;
+}
+
+nav {
+
+	display: flex;
+	width: auto;
+}
+
+.white-glowing-text {
+
+	text-shadow: 0 0 15px #fff;
+}
+
+.octagonal-button {
+
+	margin: auto auto;
+	filter: drop-shadow( 0 0 7px #18d0ee);
+	text-shadow: 0 0 10px  #18d0ee, 0 0 25px  #18d0ee, 0 0 70px #18d0ee;
+}
+
+.octagonal-button:hover {
+
+	text-shadow: 0 0 10px #3cf0ff, 0 0 10px #3cf0ff, 0 0 10px #3cf0ff;
+}
+
+.octagonal-shape {
+
+	stroke: #18d0ee;
+	stroke-width: 1;
+	fill: #000c1f;
+
+}
+
+.text-in-buttons {
+
+	fill:white;
+	font-family: 'Chakra Petch', sans-serif;
+	font-size: 0.6em;
+	
+}
+
+#universe-description {
+
+	display: none;
+	height: 100%;
+	padding: 6vh;
+	text-align: justify;
+	background-image: url(https://www.solarsystemscope.com/images/background_stars_grid.jpg);
+  	background-repeat: repeat;
+  	background-position: top center;
+	color: white;
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+#universe-description h1 {
+
+	margin-bottom: 4vh;
+	text-shadow: 0 0 10px #8529c6, 0 0 10px #8529c6, 0 0 10px #8529c6;
+
+}
+
+
+

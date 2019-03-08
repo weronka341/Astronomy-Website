@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+        <title>Astronomia</title>
+        <link rel="stylesheet" type="text/css" href="mainStyle.css">
+        <link rel="stylesheet" type="text/css" href="solarModel.css">
+        <link rel="stylesheet" type="text/css" href="popUp.css">
+        <link href='http://fonts.googleapis.com/css?family=Chakra+Petch&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+        <header>
+		  <h1 class="white-glowing-text">Astronomia</h1>
+          <nav>
+            <svg class="octagonal-button" viewBox="0 0 95 30" width="200px" height="70px">
+                <a id="solar-system-link"> 
+                <path class="octagonal-shape" d="m 5 20 l 10 8 h 64 l 10 -8 v -9 l -10 -8 h -64 l -10 8 v 9"/>
+                <text class="text-in-buttons" text-anchor="middle" 
+                y="18" x="48">Układ słoneczny</text>
+                </a>
+            </svg>
+            <svg class="octagonal-button" viewBox="0 0 95 30" width="200px" height="70px">
+                <a id="universe-description-link"> 
+                <path class="octagonal-shape" d="m 5 20 l 10 8 h 64 l 10 -8 v -9 l -10 -8 h -64 l -10 8 v 9"/>
+                <text class="text-in-buttons" text-anchor="middle" 
+                y="18" x="48">Wrzechświat</text>
+                </a>
+            </svg>
+            <svg class="octagonal-button" viewBox="0 0 95 30" width="200px" height="70px">
+                <a> 
+                <path class="octagonal-shape" d="m 5 20 l 10 8 h 64 l 10 -8 v -9 l -10 -8 h -64 l -10 8 v 9"/>
+                <text class="text-in-buttons" text-anchor="middle" 
+                y="18" x="48">O astronomii</text>
+                </a>
+            </svg>
+          </nav>
+        </header>
+        <section id="solar-system-content">
+            <div class="planets-headers">
+                <h1>Układ słoneczny</h1>
+                <br/>
+                <a id="sun-header" href="">Słońce</a><br/>
+                <a id="mercury-header" href="">Merkury</a><br/>
+                <a id="venus-header" href="">Wenus</a><br/>
+                <a id="earth-header" href="">Ziemia</a><br/>
+                <a id="mars-header" href="">Mars</a><br/>
+                <a id="jupiter-header" href="">Jowisz</a><br/>
+                <a id="saturn-header" href="">Saturn</a><br/>
+                <a id="uranus-header" href="">Uran</a><br/>
+                <a id="neptune-header" href="">Neptun</a>
+            </div>
+            <div class="solar-model">
+                <div id="sun"></div>
+                <div id="mercury"></div>
+                <div id="venus"></div>
+                <div id="earth"></div>
+                <div id="mars"></div>
+                <div id="jupiter"></div>
+                <div id="saturn"></div>
+                <div id="uranus"></div>
+                <div id="neptune"></div>
+            </div>
+        </section>
+        <section id="planets-info"> 
+            <article id="info-content">
+                <header id="choosen-planet-header">
+                </header>
+                <div id="planet-image"></div>
+                <div id="planet-description"></div>
+                <footer id="choosen-planet-footer">
+                    <span class="close">&times;</span>
+                </footer>
+            </article>
+        </section>
+        <section id="universe-description">
+            <h1>Wrzechświat</h1>
+        </section>
+        <footer>
+            <p>Weronika Szpytma | Techniki Internetowe | 2018/2019 </p>
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>
